@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      style="
+        background-color: #aaa;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display:flex;
+        border-radius: 10px;
+      "
+    >
+      <a href="./index.html"
+      style="
+        text-decoration: none;
+        color: white;
+        ">index</a>
+        <a href="./a.html"
+        style="
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+        ">a</a>
+        <a href="./head.html"
+        style="
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+            ">head</a>
+    </header>
+    <div
+      style="
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      "
+    >
+      <h1 style="color: #333; text-align: center">HTMLのaタグマスター</h1>
+
+      <section
+        style="
+          background-color: white;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 5px;
+        "
+      >
+        <h2 style="color: #0066cc">1. aタグの基本</h2>
+        <p>
+          aタグは、ハイパーリンクを作成するために使用されます。基本的な構文は次のとおりです：
+        </p>
+        <code style="background-color: #eee; padding: 5px; display: block">
+          &lt;a href="URL"&gt;リンクテキスト&lt;/a&gt;
+        </code>
+      </section>
+
+      <section
+        style="
+          background-color: white;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 5px;
+        "
+      >
+        <h2 style="color: #0066cc">2. target属性</h2>
+        <p>target属性を使用して、リンクの開き方を指定できます：</p>
+        <ul>
+          <li><code>_self</code>: 同じウィンドウ/タブで開く（デフォルト）</li>
+          <li><code>_blank</code>: 新しいウィンドウ/タブで開く</li>
+          <li><code>_parent</code>: 親フレームで開く</li>
+          <li><code>_top</code>: フルウィンドウで開く</li>
+        </ul>
+      </section>
+
+      <section
+        style="
+          background-color: white;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 5px;
+        "
+      >
+        <h2 style="color: #0066cc">3. rel属性</h2>
+        <p>rel属性は、リンク先のページとの関係を指定します：</p>
+        <ul>
+          <li>
+            <code>nofollow</code>: 検索エンジンにリンクを追跡しないよう指示
+          </li>
+          <li>
+            <code>noopener</code>:
+            新しいページが元のページにアクセスできないようにする
+          </li>
+          <li><code>noreferrer</code>: リファラー情報を送信しない</li>
+        </ul>
+      </section>
+
+      <section
+        style="
+          background-color: white;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 5px;
+        "
+      >
+        <h2 style="color: #0066cc">4. ページ内リンク</h2>
+        <p>同じページ内の特定の場所にリンクするには、#記号とIDを使用します：</p>
+        <code style="background-color: #eee; padding: 5px; display: block">
+          &lt;a href="#section1"&gt;セクション1へ&lt;/a&gt; ... &lt;h2
+          id="section1"&gt;セクション1&lt;/h2&gt;
+        </code>
+      </section>
+
+      <section
+        style="
+          background-color: white;
+          padding: 15px;
+          margin: 10px 0;
+          border-radius: 5px;
+        "
+      >
+        <h2 style="color: #0066cc">5. メールリンク</h2>
+        <p>
+          mailto:スキームを使用して、メールクライアントを起動するリンクを作成できます：
+        </p>
+        <code style="background-color: #eee; padding: 5px; display: block">
+          &lt;a href="mailto:example@example.com"&gt;メールを送る&lt;/a&gt;
+        </code>
+      </section>
+
+      <footer style="text-align: center; margin-top: 20px; color: #666">
+        <p>
+          aタグを使いこなして、魅力的でユーザーフレンドリーなウェブページを作成しましょう！
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
